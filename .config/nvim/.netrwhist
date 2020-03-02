@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/leopord/.config/nvim/plugged'
+let g:netrw_dirhist_1='/data/documents/github/nvim'
+let g:netrw_dirhist_0='/home/leopord/Softwares/github/git/test'
+let g:netrw_dirhist_9='/data/documents/github/i3wm/conf/.config/rofi'
+let g:netrw_dirhist_8='/home/leopord/bin'
+let g:netrw_dirhist_7='/home/leopord/Softwares/VMs'
+let g:netrw_dirhist_6='/home/leopord/Softwares/aur'
+let g:netrw_dirhist_5='/home/leopord/Downloads/Compressed'
+let g:netrw_dirhist_4='/home/leopord/.config/nvim/config/plugins'
+let g:netrw_dirhist_3='/home/leopord/.config/nvim/config'
