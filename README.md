@@ -1,1 +1,1 @@
-Vim's configuration files
+Use NeoVim's configuration as Vim's configuration.
