@@ -56,7 +56,7 @@ set mapleader=","
 | Shortcut      | Description                            |
 | :-----------: | -------------------------------------- |
 | \<leader\> w  | Save current buffer/tab                |
-| \<leader\> q  | Close current buffer/tab               |
+| q             | Close current buffer/tab               |
 | W             | Save all buffers/tabs                  |
 | Q             | Close all buffers/tabs and quit neovim |
 | \<leader\>r   | Reload configuration of neovim         |
