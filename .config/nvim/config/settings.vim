@@ -5,7 +5,8 @@ filetype off
 filetype plugin indent on
 set nocompatible
 set updatetime=500
-"
+set fileencodings=utf-8,gb2312,gbk,gb18030
+
 " Colors
 syntax enable           " enable syntax processing
 colorscheme NeoSolarized
