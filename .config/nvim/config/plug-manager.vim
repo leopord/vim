@@ -3,7 +3,7 @@
 "----------------------"
 call plug#begin('~/.config/nvim/plugged')
 " UI
-Plug 'iCyMind/NeoSolarized' "color scheme
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline' " status line
 Plug 'vim-airline/vim-airline-themes' " status line themes
 Plug 'mhinz/vim-startify' " shows recently used files, bookmarks, commands and sessions
