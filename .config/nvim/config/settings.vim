@@ -9,7 +9,7 @@ set fileencodings=utf-8,gb2312,gbk,gb18030
 
 " Colors
 syntax enable           " enable syntax processing
-colorscheme NeoSolarized
+colorscheme dracula
 set background=dark     " dark color of NeoSolarized
 let &t_ut=''
 if has('termguicolors')
