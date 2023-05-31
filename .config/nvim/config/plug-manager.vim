@@ -36,7 +36,7 @@ Plug 'ap/vim-css-color' " context-sensitive color name highlighter
 Plug 'elzr/vim-json' " json pretty
 Plug 'pangloss/vim-javascript', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'css', 'less'] } " javascript syntax colors
 Plug 'othree/html5.vim', { 'for' : [ 'html', 'php' ] } " HTML5 syntax
-" Plug 'honza/vim-snippets' " default snippets
+Plug 'honza/vim-snippets' " c++ snippets
 Plug 'nelsyeung/twig.vim', { 'for': ['twig'] }
 
 " Tex & LaTeX
