@@ -21,6 +21,7 @@ Plug 'jiangmiao/auto-pairs' " Insert or delete brackets, parens, quotes in pair
 Plug 'Lokaltog/vim-easymotion' "simpler way to use some motions
 Plug 'svermeulen/vim-subversive' " operator motions to quickly replace text
 Plug 'terryma/vim-multiple-cursors'  " multiple selections
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " use fzf on vim/nvim
 Plug 'junegunn/fzf.vim' " use fzf on vim/nvim
 
 " Markdown
@@ -37,6 +38,7 @@ Plug 'elzr/vim-json' " json pretty
 Plug 'pangloss/vim-javascript', { 'for': ['vim-plug', 'php', 'html', 'javascript', 'css', 'less'] } " javascript syntax colors
 Plug 'othree/html5.vim', { 'for' : [ 'html', 'php' ] } " HTML5 syntax
 Plug 'honza/vim-snippets' " default snippets
+Plug 'nelsyeung/twig.vim', { 'for': ['twig'] }
 
 " Tex & LaTeX
 "Plug 'lervag/vimtex', { 'for': ['tex', 'latex'] }
