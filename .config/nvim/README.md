@@ -134,11 +134,11 @@ set mapleader=","
 | gy           | Navigate to type definitin           |
 | gi           | Navigate to implementation           |
 | gr           | Navigate to references               |
-| \<leader\>kr | Symbol rename                        |
 
 **CocList**
 | Shortcut     | Description                           |
 |:------------:|----------------------------------|
+| \<leader\>kr | Symbol rename                    |
 | \<leader\>kf | Formatting selected code         |
 | \<leader\>kF | Formatting all code in the file  |
 | \<leader\>ka | Show all diagnostics             |
@@ -151,10 +151,12 @@ set mapleader=","
 | \<C-k\>      | Jump to previous item of CocList |
 
 **Text Object**
-| Shortcut | Description                              |
-|:--------:|------------------------------------------|
-|    if    | Select inside function (function body)   |
-|    af    | Select current function (whole function) |
+| Shortcut | Description                                  |
+|:--------:|----------------------------------------------|
+|    if    | Select function inside text (function body)  |
+|    af    | Select current function (whole function)     |
+|    ic    | Select class inside text (class body)        |
+|    ac    | Select current class (whole class)           |
 
 ### Snippets (Coc-snippets)
 
@@ -178,10 +180,10 @@ set mapleader=","
 | \<leader\>ff  | Files                               |
 | \<leader\>fa  | Ag search result                    |
 | \<leader\>fb  | Open buffers                        |
-| \<leader\>fgt | Tags in the project (`ctags -R`)    |
 | \<leader\>ft  | Tags in the current buffer          |
-| \<leader\>fgc | Git commits (requires fugitive.vim) |
+| \<leader\>fgt | Tags in the project (`ctags -R`)    |
 | \<leader\>fc  | Git commits for the current buffer  |
+| \<leader\>fgc | Git commits (requires fugitive.vim) |
 | \<leader\>fh  | v:oldfiles and open buffers         |
 **Note:**
 - [ag](https://github.com/ggreer/the_silver_searcher) is a code searching tool similar to `ack`, with a focus on speed.
@@ -210,15 +212,15 @@ set mapleader=","
 
 **Normal Mode**
 
-|  Command | Description                                                   | Example                               |
-|:--------:|----------------------------------------------------------|---------------------------------------|
-|  `cs'"`  | Replace ' with "                                         | 'Hello World!' -> "Hello World!"      |
-| `cs"<q>` | Replace " with <q></q>                                   | "Hello World!" -> <q>Hello World!</q> |
-|  `cst"`  | Full circle with "                                       | Hello World! -> Hello World!
-|   `ds"`  | Remove delimters entirely                                | "Hellow World!" -> Hello World!       |
-|  `ysiw"` | Surround word(cursor on) with "" (`iw` is a text object) | Hello World! -> "Hellow" World!       |
-|  `yss(`  | Surround line with `()` and add some spaceand            | Hellow World! -> ( Hello World! )
-|  `yss)`  | Surround line with `()` and no space)                    | Hello World! -> (Hello World!)        |
+|  Command | Description                                              | Example                                   |
+|:--------:|----------------------------------------------------------|---------------------------------------    |
+|  `cs'"`  | Replace ' with "                                         | 'Hello World!' -> "Hello World!"          |
+| `cs"<q>` | Replace " with \<q\>\</q\>                               | "Hello World!" -> \<q\>Hello World!\</q\> |
+|  `cst"`  | Full circle with "                                       | Hello World! -> Hello World!              |
+|   `ds"`  | Remove delimters entirely                                | "Hellow World!" -> Hello World!           |
+|  `ysiw"` | Surround word(cursor on) with "" (`iw` is a text object) | Hello World! -> "Hellow" World!           |
+|  `yss(`,`yss{`,`yss[`  | Surround line with `()` and add some spaceand            | Hellow World! -> ( Hello World! )         |
+|  `yss)`,`yss}`,`yss]`  | Surround line with `()` and no space)                    | Hello World! -> (Hello World!)            |
 
 **Visual Mode**
 
