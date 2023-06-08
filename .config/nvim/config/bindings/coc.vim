@@ -1,10 +1,10 @@
 " trigger, navigate
 inoremap <silent><expr> <Tab>
       \ coc#pum#visible() ? coc#pum#next(1) :
-      \ check_backspace() ? "\<TAB>" :
+      \ CheckBackspace() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-function! s:check_backspace() abort
+function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
@@ -67,8 +67,8 @@ noremap <silent> <C-j> :<C-u>CocNext<CR>
 noremap <silent> <C-k> :<C-u>CocPrev<CR>
 
 " Use K to show documentation in preview window
-noremap <silent> K :call show_documentation()<CR>
-function! s:show_documentation()
+noremap <silent> K :call ShowDocumentation()<CR>
+function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
   else
